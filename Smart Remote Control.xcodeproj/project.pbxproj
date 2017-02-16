@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF183B651DFC1B2E0050DAAB /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DF183B641DFC1B2E0050DAAB /* Utilities.m */; };
+		DF39DB3C1E03DBD900BD7718 /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39DB3B1E03DBD900BD7718 /* MViewController.m */; };
+		DFD0C9B41E166A820095CCB3 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C9B31E166A820095CCB3 /* Group.m */; };
+		DFD0C9B81E166B0E0095CCB3 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C9B71E166B0E0095CCB3 /* Activity.m */; };
+		DFD0C9BB1E166B400095CCB3 /* Code.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C9BA1E166B400095CCB3 /* Code.m */; };
+		DFD0C9BE1E166F2E0095CCB3 /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C9BD1E166F2E0095CCB3 /* ModelManager.m */; };
+		DFE9C9121DED01E400C4FF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9C9111DED01E400C4FF2E /* main.m */; };
+		DFE9C9151DED01E400C4FF2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9C9141DED01E400C4FF2E /* AppDelegate.m */; };
+		DFE9C9181DED01E400C4FF2E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9C9171DED01E400C4FF2E /* SettingsViewController.m */; };
+		DFE9C91B1DED01E400C4FF2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE9C9191DED01E400C4FF2E /* Main.storyboard */; };
+		DFE9C91D1DED01E400C4FF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE9C91C1DED01E400C4FF2E /* Assets.xcassets */; };
+		DFE9C9201DED01E400C4FF2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE9C91E1DED01E400C4FF2E /* LaunchScreen.storyboard */; };
+		DFE9C92B1DED01E400C4FF2E /* Smart_Remote_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9C92A1DED01E400C4FF2E /* Smart_Remote_ControlTests.m */; };
+		DFE9C9361DED01E400C4FF2E /* Smart_Remote_ControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9C9351DED01E400C4FF2E /* Smart_Remote_ControlUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFE9C9271DED01E400C4FF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE9C9051DED01E400C4FF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE9C90C1DED01E400C4FF2E;
+			remoteInfo = "Smart Remote Control";
+		};
+		DFE9C9321DED01E400C4FF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE9C9051DED01E400C4FF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE9C90C1DED01E400C4FF2E;
+			remoteInfo = "Smart Remote Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF183B641DFC1B2E0050DAAB /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		DF183B661DFC1B3D0050DAAB /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		DF39DB3A1E03DBD900BD7718 /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
+		DF39DB3B1E03DBD900BD7718 /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
+		DFD0C9B21E166A820095CCB3 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		DFD0C9B31E166A820095CCB3 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		DFD0C9B61E166B0E0095CCB3 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		DFD0C9B71E166B0E0095CCB3 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		DFD0C9B91E166B400095CCB3 /* Code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Code.h; sourceTree = "<group>"; };
+		DFD0C9BA1E166B400095CCB3 /* Code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Code.m; sourceTree = "<group>"; };
+		DFD0C9BC1E166F2E0095CCB3 /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
+		DFD0C9BD1E166F2E0095CCB3 /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
+		DFE9C90D1DED01E400C4FF2E /* Smart Remote Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Remote Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE9C9111DED01E400C4FF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFE9C9131DED01E400C4FF2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFE9C9141DED01E400C4FF2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFE9C9161DED01E400C4FF2E /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DFE9C9171DED01E400C4FF2E /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		DFE9C91A1DED01E400C4FF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFE9C91C1DED01E400C4FF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFE9C91F1DED01E400C4FF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFE9C9211DED01E400C4FF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE9C9261DED01E400C4FF2E /* Smart Remote ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Remote ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE9C92A1DED01E400C4FF2E /* Smart_Remote_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Smart_Remote_ControlTests.m; sourceTree = "<group>"; };
+		DFE9C92C1DED01E400C4FF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE9C9311DED01E400C4FF2E /* Smart Remote ControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart Remote ControlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE9C9351DED01E400C4FF2E /* Smart_Remote_ControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Smart_Remote_ControlUITests.m; sourceTree = "<group>"; };
+		DFE9C9371DED01E400C4FF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFE9C90A1DED01E400C4FF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9C9231DED01E400C4FF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9C92E1DED01E400C4FF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFD0C9B51E166A910095CCB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFD0C9B21E166A820095CCB3 /* Group.h */,
+				DFD0C9B31E166A820095CCB3 /* Group.m */,
+				DFD0C9B61E166B0E0095CCB3 /* Activity.h */,
+				DFD0C9B71E166B0E0095CCB3 /* Activity.m */,
+				DFD0C9B91E166B400095CCB3 /* Code.h */,
+				DFD0C9BA1E166B400095CCB3 /* Code.m */,
+				DFD0C9BC1E166F2E0095CCB3 /* ModelManager.h */,
+				DFD0C9BD1E166F2E0095CCB3 /* ModelManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DFE9C9041DED01E400C4FF2E = {
+			isa = PBXGroup;
+			children = (
+				DFE9C90F1DED01E400C4FF2E /* Smart Remote Control */,
+				DFE9C9291DED01E400C4FF2E /* Smart Remote ControlTests */,
+				DFE9C9341DED01E400C4FF2E /* Smart Remote ControlUITests */,
+				DFE9C90E1DED01E400C4FF2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFE9C90E1DED01E400C4FF2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9C90D1DED01E400C4FF2E /* Smart Remote Control.app */,
+				DFE9C9261DED01E400C4FF2E /* Smart Remote ControlTests.xctest */,
+				DFE9C9311DED01E400C4FF2E /* Smart Remote ControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFE9C90F1DED01E400C4FF2E /* Smart Remote Control */ = {
+			isa = PBXGroup;
+			children = (
+				DF39DB3A1E03DBD900BD7718 /* MViewController.h */,
+				DF39DB3B1E03DBD900BD7718 /* MViewController.m */,
+				DFE9C9131DED01E400C4FF2E /* AppDelegate.h */,
+				DFE9C9141DED01E400C4FF2E /* AppDelegate.m */,
+				DFE9C9161DED01E400C4FF2E /* SettingsViewController.h */,
+				DFE9C9171DED01E400C4FF2E /* SettingsViewController.m */,
+				DFD0C9B51E166A910095CCB3 /* Models */,
+				DFE9C9191DED01E400C4FF2E /* Main.storyboard */,
+				DFE9C91C1DED01E400C4FF2E /* Assets.xcassets */,
+				DFE9C91E1DED01E400C4FF2E /* LaunchScreen.storyboard */,
+				DFE9C9211DED01E400C4FF2E /* Info.plist */,
+				DFE9C9101DED01E400C4FF2E /* Supporting Files */,
+				DF183B661DFC1B3D0050DAAB /* Utilities.h */,
+				DF183B641DFC1B2E0050DAAB /* Utilities.m */,
+			);
+			path = "Smart Remote Control";
+			sourceTree = "<group>";
+		};
+		DFE9C9101DED01E400C4FF2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9C9111DED01E400C4FF2E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFE9C9291DED01E400C4FF2E /* Smart Remote ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9C92A1DED01E400C4FF2E /* Smart_Remote_ControlTests.m */,
+				DFE9C92C1DED01E400C4FF2E /* Info.plist */,
+			);
+			path = "Smart Remote ControlTests";
+			sourceTree = "<group>";
+		};
+		DFE9C9341DED01E400C4FF2E /* Smart Remote ControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9C9351DED01E400C4FF2E /* Smart_Remote_ControlUITests.m */,
+				DFE9C9371DED01E400C4FF2E /* Info.plist */,
+			);
+			path = "Smart Remote ControlUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFE9C90C1DED01E400C4FF2E /* Smart Remote Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE9C93A1DED01E400C4FF2E /* Build configuration list for PBXNativeTarget "Smart Remote Control" */;
+			buildPhases = (
+				DFE9C9091DED01E400C4FF2E /* Sources */,
+				DFE9C90A1DED01E400C4FF2E /* Frameworks */,
+				DFE9C90B1DED01E400C4FF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Remote Control";
+			productName = "Smart Remote Control";
+			productReference = DFE9C90D1DED01E400C4FF2E /* Smart Remote Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFE9C9251DED01E400C4FF2E /* Smart Remote ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE9C93D1DED01E400C4FF2E /* Build configuration list for PBXNativeTarget "Smart Remote ControlTests" */;
+			buildPhases = (
+				DFE9C9221DED01E400C4FF2E /* Sources */,
+				DFE9C9231DED01E400C4FF2E /* Frameworks */,
+				DFE9C9241DED01E400C4FF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE9C9281DED01E400C4FF2E /* PBXTargetDependency */,
+			);
+			name = "Smart Remote ControlTests";
+			productName = "Smart Remote ControlTests";
+			productReference = DFE9C9261DED01E400C4FF2E /* Smart Remote ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFE9C9301DED01E400C4FF2E /* Smart Remote ControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE9C9401DED01E400C4FF2E /* Build configuration list for PBXNativeTarget "Smart Remote ControlUITests" */;
+			buildPhases = (
+				DFE9C92D1DED01E400C4FF2E /* Sources */,
+				DFE9C92E1DED01E400C4FF2E /* Frameworks */,
+				DFE9C92F1DED01E400C4FF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE9C9331DED01E400C4FF2E /* PBXTargetDependency */,
+			);
+			name = "Smart Remote ControlUITests";
+			productName = "Smart Remote ControlUITests";
+			productReference = DFE9C9311DED01E400C4FF2E /* Smart Remote ControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFE9C9051DED01E400C4FF2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Andreas Henriksson";
+				TargetAttributes = {
+					DFE9C90C1DED01E400C4FF2E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9BMC7C4979;
+						ProvisioningStyle = Automatic;
+					};
+					DFE9C9251DED01E400C4FF2E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9BMC7C4979;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFE9C90C1DED01E400C4FF2E;
+					};
+					DFE9C9301DED01E400C4FF2E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9BMC7C4979;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DFE9C90C1DED01E400C4FF2E;
+					};
+				};
+			};
+			buildConfigurationList = DFE9C9081DED01E400C4FF2E /* Build configuration list for PBXProject "Smart Remote Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFE9C9041DED01E400C4FF2E;
+			productRefGroup = DFE9C90E1DED01E400C4FF2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFE9C90C1DED01E400C4FF2E /* Smart Remote Control */,
+				DFE9C9251DED01E400C4FF2E /* Smart Remote ControlTests */,
+				DFE9C9301DED01E400C4FF2E /* Smart Remote ControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFE9C90B1DED01E400C4FF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9C9201DED01E400C4FF2E /* LaunchScreen.storyboard in Resources */,
+				DFE9C91D1DED01E400C4FF2E /* Assets.xcassets in Resources */,
+				DFE9C91B1DED01E400C4FF2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9C9241DED01E400C4FF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9C92F1DED01E400C4FF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFE9C9091DED01E400C4FF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9C9181DED01E400C4FF2E /* SettingsViewController.m in Sources */,
+				DFE9C9151DED01E400C4FF2E /* AppDelegate.m in Sources */,
+				DF183B651DFC1B2E0050DAAB /* Utilities.m in Sources */,
+				DFD0C9B41E166A820095CCB3 /* Group.m in Sources */,
+				DFD0C9BB1E166B400095CCB3 /* Code.m in Sources */,
+				DFD0C9BE1E166F2E0095CCB3 /* ModelManager.m in Sources */,
+				DFE9C9121DED01E400C4FF2E /* main.m in Sources */,
+				DFD0C9B81E166B0E0095CCB3 /* Activity.m in Sources */,
+				DF39DB3C1E03DBD900BD7718 /* MViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9C9221DED01E400C4FF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9C92B1DED01E400C4FF2E /* Smart_Remote_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9C92D1DED01E400C4FF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9C9361DED01E400C4FF2E /* Smart_Remote_ControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFE9C9281DED01E400C4FF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE9C90C1DED01E400C4FF2E /* Smart Remote Control */;
+			targetProxy = DFE9C9271DED01E400C4FF2E /* PBXContainerItemProxy */;
+		};
+		DFE9C9331DED01E400C4FF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE9C90C1DED01E400C4FF2E /* Smart Remote Control */;
+			targetProxy = DFE9C9321DED01E400C4FF2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFE9C9191DED01E400C4FF2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE9C91A1DED01E400C4FF2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFE9C91E1DED01E400C4FF2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE9C91F1DED01E400C4FF2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFE9C9381DED01E400C4FF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFE9C9391DED01E400C4FF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFE9C93B1DED01E400C4FF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9BMC7C4979;
+				INFOPLIST_FILE = "Smart Remote Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nosskirneh.Smart-Remote-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFE9C93C1DED01E400C4FF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9BMC7C4979;
+				INFOPLIST_FILE = "Smart Remote Control/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nosskirneh.Smart-Remote-Control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFE9C93E1DED01E400C4FF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9BMC7C4979;
+				INFOPLIST_FILE = "Smart Remote ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nosskirneh.Smart-Remote-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Remote Control.app/Smart Remote Control";
+			};
+			name = Debug;
+		};
+		DFE9C93F1DED01E400C4FF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9BMC7C4979;
+				INFOPLIST_FILE = "Smart Remote ControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nosskirneh.Smart-Remote-ControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Remote Control.app/Smart Remote Control";
+			};
+			name = Release;
+		};
+		DFE9C9411DED01E400C4FF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9BMC7C4979;
+				INFOPLIST_FILE = "Smart Remote ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nosskirneh.Smart-Remote-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Remote Control";
+			};
+			name = Debug;
+		};
+		DFE9C9421DED01E400C4FF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9BMC7C4979;
+				INFOPLIST_FILE = "Smart Remote ControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nosskirneh.Smart-Remote-ControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Remote Control";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFE9C9081DED01E400C4FF2E /* Build configuration list for PBXProject "Smart Remote Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE9C9381DED01E400C4FF2E /* Debug */,
+				DFE9C9391DED01E400C4FF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE9C93A1DED01E400C4FF2E /* Build configuration list for PBXNativeTarget "Smart Remote Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE9C93B1DED01E400C4FF2E /* Debug */,
+				DFE9C93C1DED01E400C4FF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE9C93D1DED01E400C4FF2E /* Build configuration list for PBXNativeTarget "Smart Remote ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE9C93E1DED01E400C4FF2E /* Debug */,
+				DFE9C93F1DED01E400C4FF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE9C9401DED01E400C4FF2E /* Build configuration list for PBXNativeTarget "Smart Remote ControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE9C9411DED01E400C4FF2E /* Debug */,
+				DFE9C9421DED01E400C4FF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFE9C9051DED01E400C4FF2E /* Project object */;
+}
