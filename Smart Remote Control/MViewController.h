@@ -15,8 +15,8 @@
 #define buttonWidth 122
 #define buttonHeight 46
 
-@interface MViewController : UIViewController /* <UITableViewDelegate, UITableViewDataSource> */
+@interface MViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (strong, nonatomic) IBOutlet UIScrollView *view;
+@property (strong, nonatomic) IBOutlet UICollectionView *view;
 
 @end
