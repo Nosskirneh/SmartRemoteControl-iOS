@@ -10,9 +10,13 @@
 #import "Utilities.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ModelManager.h"
+#import "ActivityButton.h"
 
-@interface MViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+#define buttonWidth 122
+#define buttonHeight 46
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface MViewController : UIViewController /* <UITableViewDelegate, UITableViewDataSource> */
+
+@property (strong, nonatomic) IBOutlet UIScrollView *view;
 
 @end
