@@ -31,6 +31,21 @@
     [self.view registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
     [self.view registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
     [self.view setBackgroundColor:[UIColor whiteColor]];
+
+    // Initialize the refresh control.
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self
+                            action:@selector(handlePullDown:)
+                  forControlEvents:UIControlEventValueChanged];
+
+    NSString *text = @"Update";
+    UIFont *font = [UIFont fontWithName:@"Helvetica-Light" size:10.0];
+    NSDictionary *attributes = @{NSFontAttributeName:font, NSForegroundColorAttributeName:[UIColor grayColor]};
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:text attributes:attributes];
+
+    self.view.alwaysBounceVertical = YES;
+    [self.view addSubview:self.refreshControl];
+
     // Configure toast style
     CSToastStyle *style = [[CSToastStyle alloc] initWithDefaultStyle];
     style.imageSize = CGSizeMake(40, 37);
@@ -152,6 +167,12 @@
                         position:CSToastPositionTop];
         });
     });
+}
+
+- (void)handlePullDown:(UIRefreshControl *)refreshControl {
+    [refreshControl endRefreshing];
+
+    [[ModelManager sharedInstance] getGroups];
 }
 
 - (void)handleGroupsUpdatedNotification:(NSNotification *)notification {
