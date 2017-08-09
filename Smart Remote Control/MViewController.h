@@ -21,8 +21,6 @@
 @interface MViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) UICollectionView *view;
-@property (strong, nonatomic) UIWindow *toastWindow;
-@property (nonatomic, readwrite) int amountOfToastVisible;
 @property (nonatomic, readwrite, strong) UIRefreshControl *refreshControl;
 
 @end

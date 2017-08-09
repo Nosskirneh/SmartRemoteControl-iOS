@@ -414,7 +414,9 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
     
     if([point isKindOfClass:[NSString class]]) {
         if([point caseInsensitiveCompare:CSToastPositionTop] == NSOrderedSame) {
-            return CGPointMake(self.bounds.size.width/2, (toast.frame.size.height / 2) + style.verticalPadding);
+            UINavigationController *navigationController = (UINavigationController *)[[[[UIApplication sharedApplication] delegate] window] rootViewController];
+            return CGPointMake(self.bounds.size.width/2,
+                               (toast.frame.size.height / 2) + style.verticalPadding + navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height);
         } else if([point caseInsensitiveCompare:CSToastPositionCenter] == NSOrderedSame) {
             return CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2);
         }

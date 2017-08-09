@@ -196,9 +196,9 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
         }
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.view makeToast:message
-                        duration:2
-                        position:CSToastPositionTop];
+            [[UIApplication sharedApplication].keyWindow makeToast:message
+                               duration:2
+                               position:CSToastPositionTop];
         });
     });
 }
