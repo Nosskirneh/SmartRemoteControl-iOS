@@ -10,6 +10,7 @@
 		DF183B651DFC1B2E0050DAAB /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DF183B641DFC1B2E0050DAAB /* Utilities.m */; };
 		DF274CAC1EE4DD5900C42EEC /* ActivityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF274CAB1EE4DD5900C42EEC /* ActivityButton.m */; };
 		DF39DB3C1E03DBD900BD7718 /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39DB3B1E03DBD900BD7718 /* MViewController.m */; };
+		DF947F0D1EE572B000D51F45 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = DF947F0C1EE572B000D51F45 /* UIView+Toast.m */; };
 		DFD0C9B41E166A820095CCB3 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C9B31E166A820095CCB3 /* Group.m */; };
 		DFD0C9B81E166B0E0095CCB3 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C9B71E166B0E0095CCB3 /* Activity.m */; };
 		DFD0C9BB1E166B400095CCB3 /* Code.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD0C9BA1E166B400095CCB3 /* Code.m */; };
@@ -48,6 +49,8 @@
 		DF274CAB1EE4DD5900C42EEC /* ActivityButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityButton.m; sourceTree = "<group>"; };
 		DF39DB3A1E03DBD900BD7718 /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
 		DF39DB3B1E03DBD900BD7718 /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
+		DF947F0B1EE572B000D51F45 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		DF947F0C1EE572B000D51F45 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		DFD0C9B21E166A820095CCB3 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		DFD0C9B31E166A820095CCB3 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		DFD0C9B61E166B0E0095CCB3 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				DFE9C9141DED01E400C4FF2E /* AppDelegate.m */,
 				DFE9C9161DED01E400C4FF2E /* SettingsViewController.h */,
 				DFE9C9171DED01E400C4FF2E /* SettingsViewController.m */,
+				DF947F0B1EE572B000D51F45 /* UIView+Toast.h */,
+				DF947F0C1EE572B000D51F45 /* UIView+Toast.m */,
 				DFD0C9B51E166A910095CCB3 /* Models */,
 				DFE9C9191DED01E400C4FF2E /* Main.storyboard */,
 				DFE9C91C1DED01E400C4FF2E /* Assets.xcassets */,
@@ -324,6 +329,7 @@
 				DF183B651DFC1B2E0050DAAB /* Utilities.m in Sources */,
 				DFD0C9B41E166A820095CCB3 /* Group.m in Sources */,
 				DFD0C9BB1E166B400095CCB3 /* Code.m in Sources */,
+				DF947F0D1EE572B000D51F45 /* UIView+Toast.m in Sources */,
 				DFD0C9BE1E166F2E0095CCB3 /* ModelManager.m in Sources */,
 				DF274CAC1EE4DD5900C42EEC /* ActivityButton.m in Sources */,
 				DFE9C9121DED01E400C4FF2E /* main.m in Sources */,

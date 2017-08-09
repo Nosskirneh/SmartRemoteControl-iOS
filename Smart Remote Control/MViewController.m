@@ -31,6 +31,11 @@
     [self.view registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
     [self.view registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    // Configure toast style
+    CSToastStyle *style = [[CSToastStyle alloc] initWithDefaultStyle];
+    style.imageSize = CGSizeMake(40, 37);
+    [CSToastManager setSharedStyle:style];
+    [CSToastManager setQueueEnabled:NO];
 }
 
 - (void)viewDidLoad {
@@ -131,7 +136,21 @@
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/command", GetBaseURL()]];
 
     SendRequest(@"POST", body, url, ^(NSString *response) {
-        // Show toast here
+
+        NSString *message;
+        if ([response isEqualToString:@"OK"]) {
+            // Show success toast
+            message = @"Success!";
+        } else {
+            // Show not success toast
+            message = @"Something went wrong!";
+        }
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.view makeToast:message
+                        duration:2
+                        position:CSToastPositionTop];
+        });
     });
 }
 

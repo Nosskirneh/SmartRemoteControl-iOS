@@ -11,12 +11,17 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ModelManager.h"
 #import "ActivityButton.h"
+#import "UIView+Toast.h"
 
 #define buttonWidth 122
 #define buttonHeight 46
+#define TOAST_MAX_WIDTH_PORTRAIT 100
+#define TOAST_MAX_WIDTH_LANDSCAPE 80
 
 @interface MViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (strong, nonatomic) IBOutlet UICollectionView *view;
+@property (strong, nonatomic) UICollectionView *view;
+@property (strong, nonatomic) UIWindow *toastWindow;
+@property (nonatomic, readwrite) int amountOfToastVisible;
 
 @end
