@@ -39,7 +39,8 @@
     LoadCommands(^(NSArray<Group *> *groups) {
         _groups = groups;
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:GROUPS_UPDATED_EVENT object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:GROUPS_UPDATED_EVENT
+                                                            object:nil];
     });
 }
 

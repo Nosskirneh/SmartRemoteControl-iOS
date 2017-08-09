@@ -19,17 +19,23 @@
 - (void)loadView {
     // Create scroll view
     UINavigationController *navigationController = (UINavigationController *)[[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    
-    CGRect frame = CGRectMake(0, navigationController.navigationBar.frame.size.height, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - navigationController.navigationBar.frame.size.height);
-    
+
+    CGRect frame = CGRectMake(0,
+                              navigationController.navigationBar.frame.size.height,
+                              [[UIScreen mainScreen] bounds].size.width,
+                              [[UIScreen mainScreen] bounds].size.height - navigationController.navigationBar.frame.size.height);
+
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     [layout setSectionInset:UIEdgeInsetsMake(30, 0, 30, 0)];
     self.view = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
     [self.view setDataSource:self];
     [self.view setDelegate:self];
-    
+
     [self.view registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
-    [self.view registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
+    [self.view registerClass:[UICollectionReusableView class]
+  forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+         withReuseIdentifier:@"HeaderView"];
+
     [self.view setBackgroundColor:[UIColor whiteColor]];
 
     // Initialize the refresh control.
@@ -56,10 +62,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleGroupsUpdatedNotification:) name:GROUPS_UPDATED_EVENT object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleGroupsUpdatedNotification:)
+                                                 name:GROUPS_UPDATED_EVENT object:nil];
 
     [[ModelManager sharedInstance] getGroups];
-
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -71,9 +78,10 @@
     return [ModelManager sharedInstance].groups.count;
 }
 
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellIdentifier" forIndexPath:indexPath];
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellIdentifier"
+                                                                           forIndexPath:indexPath];
     
     Group *group = [ModelManager sharedInstance].groups[indexPath.section];
     
@@ -84,7 +92,10 @@
     activity = group.activities[indexPath.row * 2];
     button = [ActivityButton buttonWithActivity:activity
                                           group:group
-                                          frame:CGRectMake([[UIScreen mainScreen] bounds].size.width/4 - buttonWidth/2, 0, buttonWidth, buttonHeight)];
+                                          frame:CGRectMake([[UIScreen mainScreen] bounds].size.width/4 - buttonWidth/2,
+                                                           0,
+                                                           buttonWidth,
+                                                           buttonHeight)];
     
     [button addTarget:self
                action:@selector(buttonClicked:)
@@ -96,7 +107,10 @@
     activity = group.activities[indexPath.row * 2 + 1];
     button = [ActivityButton buttonWithActivity:activity
                                           group:group
-                                          frame:CGRectMake(3 * [[UIScreen mainScreen] bounds].size.width/4 - buttonWidth/2, 0, buttonWidth, buttonHeight)];
+                                          frame:CGRectMake(3 * [[UIScreen mainScreen] bounds].size.width/4 - buttonWidth/2,
+                                                           0,
+                                                           buttonWidth,
+                                                           buttonHeight)];
     
     [button addTarget:self
                action:@selector(buttonClicked:)
@@ -108,15 +122,23 @@
     return cell;
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+           viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath {
+
     if (kind == UICollectionElementKindSectionHeader) {
         
-        UICollectionReusableView *reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        UICollectionReusableView *reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                                                                                    withReuseIdentifier:@"HeaderView"
+                                                                                           forIndexPath:indexPath];
         
         if (reusableView == nil) {
-            reusableView = [[UICollectionReusableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+            reusableView = [[UICollectionReusableView alloc] initWithFrame:CGRectMake(0,
+                                                                                      0,
+                                                                                      self.view.frame.size.width,
+                                                                                      44)];
         }
-        
+
         UILabel *label;
         if (reusableView.subviews.count == 0) {
             label = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, reusableView.frame.size.width, 44)];
@@ -126,7 +148,7 @@
         } else {
             label = (UILabel *)reusableView.subviews[0];
         }
-        
+
         label.text = [ModelManager sharedInstance].groups[indexPath.section].name;
         return reusableView;
     }
@@ -134,15 +156,27 @@
     return nil;
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+// Header (group name) size
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
+referenceSizeForHeaderInSection:(NSInteger)section {
+
     return CGSizeMake(self.view.frame.size.width, 44);
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+// Cell size
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+
     return CGSizeMake(self.view.frame.size.width, buttonHeight);
 }
 
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+// Space between cells
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(UICollectionViewLayout*)collectionViewLayout
+minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+
     return 30;
 }
 
